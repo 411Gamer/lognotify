@@ -33,3 +33,18 @@ print(debug(text="Debugging info"))
 print(critical(text="Critical failure!"))
 print(custom(text="Custom log message", log_level="ALERT", text_color="magenta", letter_color="red"))
 ```
+
+### **Install**
+
+##### With PyPi
+```python
+pip install lognotify
+```
+
+##### With Source
+```shell
+git clone https://github.com/411Gamer/lognotify.git
+cd lognotify
+python3 setup.py install
+```
+
