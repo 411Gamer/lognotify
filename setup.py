@@ -9,8 +9,10 @@ setup(
     install_requires=[
         'colorama==0.4.6',
     ],
+    description="A module for colorful console logging",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
+    url="https://github.com/411Gamer/lognotify",
     classifiers=[
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
     ],
