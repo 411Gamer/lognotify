@@ -1,7 +1,7 @@
 import os
 from colorama import Fore, Back, Style
 
-def log_message(text, log_level, text_color, letter_color, text_back, letter_back, text_case, letter_case):
+def log_message(text, log_level, text_color, text_back, letter_color, letter_back, text_case, letter_case):
     if os.name == "nt":
         from colorama import init
         init()
@@ -67,8 +67,8 @@ def log_message(text, log_level, text_color, letter_color, text_back, letter_bac
     letter_output = letter_reg.get(letter_case, log_level)
     text_output = text_reg.get(text_case, text)
 
-    letter_output = f"{color_fore.get(letter_color, '')}{color_back.get(letter_back, '')}[{letter_output}]:{Style.RESET_ALL}"
-    text_output = f"{color_fore.get(text_color, '')}{color_back.get(text_back, '')} {text_output}"
+    letter_output = f"[{color_fore.get(letter_color, '')}{color_back.get(letter_back, '')}{letter_output}{Style.RESET_ALL}] "
+    text_output = f"{color_fore.get(text_color, '')}{color_back.get(text_back, '')}{text_output}{Style.RESET_ALL}"
 
     output = letter_output + text_output + Style.RESET_ALL
 

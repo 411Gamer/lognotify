@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="lognotify",
-    version="0.0.2",
+    version="0.0.3",
     author="411Gamer",
     author_email="ponrobot0@gmail.com",
     packages=find_packages(),
